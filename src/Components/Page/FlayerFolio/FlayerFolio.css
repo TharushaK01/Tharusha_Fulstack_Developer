@@ -1,0 +1,87 @@
+.flayerdesigns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 80px;
+}
+.flayer-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+.flayer-header h1 {
+  font-size: 34px;
+  text-align: center;
+  align-items: center;
+}
+.flyer-list {
+  list-style-type: none;
+  font-size: 18px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(2, auto);
+  flex-wrap: nowrap;
+  gap: 15px;
+  overflow-x: auto;
+  margin: 40px 0;
+  padding: 0;
+}
+.flyer-list li {
+  text-align: center;
+  border: 2px solid white;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.flyer-list li:hover {
+  background: #fff;
+  color: #000;
+}
+.FlyerFolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.FlyerFolio h2 {
+  font-size: 30px;
+  text-align: left;
+}
+
+.hover-zoom {
+  transition: transform 0.3s ease;
+}
+
+.hover-zoom:hover {
+  transform: scale(1.05);
+  z-index: 2; 
+}
+.FlyerFolio .see_more {
+    align-self: flex-end;      
+    display: inline-block;     
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;          
+}
+.FlyerFolio .see_more a {
+  display: inline-block; 
+  padding: 10px 20px; 
+  border-radius: 50px;
+  color: #ffffff; 
+  text-decoration: none; 
+  border: 2px solid #fff;
+  transition: all 0.3s ease; 
+}
+
+.FlyerFolio .see_more:hover a {
+  color: #000;
+  font-weight: 600;
+  background: #fff;
+}

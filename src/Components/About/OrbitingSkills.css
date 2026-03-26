@@ -1,0 +1,143 @@
+.skills-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 400px;
+  position: relative;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.center-icon {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background-color: #1f2937;
+  border-radius: 50%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.center-icon:hover {
+  transform: scale(1.1);
+}
+
+.code-icon {
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: 'Courier New', monospace;
+}
+
+.skills-wheel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  animation: rotate-out 20s linear infinite;
+}
+
+.skill-item {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: rotate-in 20s linear infinite;
+  transform: translate(-50%, -50%);
+}
+
+.skill-item:hover {
+  transform: translate(-50%, -50%) scale(1.15);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.skill-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  /* Ensure original SVG colors are preserved */
+}
+
+.skill-name {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.skill-item:hover .skill-name {
+  opacity: 1;
+  visibility: visible;
+}
+
+@keyframes rotate-out {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-in {
+  from {
+    transform: rotate(0deg) translate(-50%, -50%);
+  }
+  to {
+    transform: rotate(-360deg) translate(-50%, -50%);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .skills-container {
+    height: 300px;
+    width: 300px;
+  }
+
+  .center-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .code-icon {
+    font-size: 20px;
+  }
+
+  .skill-item {
+    width: 48px;
+    height: 48px;
+  }
+
+  .skill-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .skill-name {
+    font-size: 12px;
+    padding: 4px 8px;
+    bottom: -25px;
+  }
+}

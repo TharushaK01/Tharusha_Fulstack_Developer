@@ -1,0 +1,101 @@
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+.portfolio h2{
+    font-size: 30px;
+    text-align: center;
+}
+.type-folio{
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0;
+}
+.foliorow{
+    display: flex;
+    flex-direction: column;
+}
+.foliorow h3{
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 20px;
+    background: linear-gradient(267deg, #000cff 90%, #36b6ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.folio{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin: 20px 0;
+    justify-content: center;
+       
+}
+/* .card-web img{
+    width: 435px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.card-web img:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+} */
+
+.card-web {
+    width: 435px;
+    height: 435px;           
+    overflow: hidden;        
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.card-web img {
+    width: 100%;
+    height: auto;
+    transition: transform 5s ease; 
+    border-radius: 20px;
+    display: block;
+}
+
+
+.card-web:hover img {
+    transform: translateY(calc(-100% + 435px));
+}
+
+
+.card img{
+    width: 435px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.card img:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.foliorow .see_more {
+    align-self: flex-end;      
+    display: inline-block;     
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;          
+}
+.foliorow .see_more a {
+  display: inline-block; 
+  padding: 10px 20px; 
+  border-radius: 50px;
+  color: #ffffff; 
+  text-decoration: none; 
+  border: 2px solid #fff;
+  transition: all 0.3s ease; 
+}
+
+.foliorow .see_more:hover a {
+  color: #000;
+  font-weight: 600;
+  background: #fff;
+}

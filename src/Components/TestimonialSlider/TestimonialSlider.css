@@ -1,0 +1,92 @@
+.testimonial-section {
+  padding: 80px 0;
+  background-color:#0f0e0e; /* Light background for contrast */
+  text-align: center;
+}
+
+.section-title {
+  font-size: 30px;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+.slider-container {
+  overflow: hidden;
+  max-width: 1440x;
+  margin: 0 auto;
+}
+
+.slider-track {
+  display: flex;
+  animation: slideRightToLeft 70s linear infinite;
+  will-change: transform;
+}
+
+@keyframes slideRightToLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.testimonial-card {
+  min-width: 300px;
+  margin: 20px 15px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #ffffff;
+}
+
+.testimonial-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.review {
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.name {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #007bff; 
+}
+
+.country {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #b3b3b3;
+}
+
+.stars {
+  font-size: 16px;
+  color: #ffd700; /* Gold for stars */
+  display: flex;
+  justify-content: center;
+}
+
+/* For left to right direction, you can replace the animation with this one: */
+@keyframes slideLeftToRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* To use left to right, apply 'animation: slideLeftToRight 30s linear infinite;' to .slider-track */
+/* Pause on hover the container for better UX */
+.slider-container:hover .slider-track {
+  animation-play-state: paused;
+}

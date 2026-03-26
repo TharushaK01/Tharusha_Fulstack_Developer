@@ -1,0 +1,99 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 40px 0px;
+}
+.contact-title{
+    position: relative;
+}
+.contact-title h2{
+    font-size: 30px;
+    color: #fff;
+}
+.contact-section{
+    display: flex;
+    gap: 100px;
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.contact-left h3{
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 20px;
+    background: linear-gradient(267deg, #000cff 90%, #36b6ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.contact-left p{
+    font-size: 16px;
+    text-align: left;
+    line-height: 23px;
+    max-width: 550px;
+}
+.contact-details{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 16px;
+}
+.contact-detail{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.contact-right{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.contatct-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contatct-form label{
+    font-size: 16px;
+    text-align: left;
+}
+.contatct-form input{
+    border: none;
+    width: 700px;
+    height: 50px;
+    padding-left: 20px;
+    border-radius: 4px;
+    background: #32323c;
+    color: #A0A0A0;
+    font-size: 16px;
+}
+.contatct-form textarea{
+    width: 700px;
+    border: none;
+    padding: 25px;
+    border-radius: 4px;
+    background: #32323c;
+    color: #A0A0A0;
+    font-size: 16px;
+}
+.contact-submit{
+    border: none;
+    color: white;
+    border-radius: 50px;
+    background: linear-gradient(267deg, #000cff -5.09%, #36b6ff 106.28%);
+    font-size: 16px;
+    padding: 15px 40px;
+    cursor: pointer;
+    transition: 0.3s;
+    align-self: flex-start;      
+    display: inline-block; 
+}
+.contact-submit:hover{
+    background: linear-gradient(267deg, #36b6ff 0.36%, #000cff 102.06%);
+}

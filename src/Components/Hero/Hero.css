@@ -1,0 +1,98 @@
+.hero {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 20px;
+    min-height: 100vh; 
+    justify-content: center; 
+    position: relative; 
+    animation: slideDown 2s ease-out forwards; }
+
+/* Animation keyframes for sliding to the middle */
+@keyframes slideDown {
+    0% {
+        transform: translateY(10%); 
+        opacity: 0; 
+    }
+    100% {
+        transform: translateY(0); 
+        opacity: 1; 
+    }
+}
+
+.hero-text h1 {
+    text-align: left;
+    font-size: 34px;
+}
+
+.hero-text h1 span {
+    background: linear-gradient(267deg, #000cff 2%, #36b6ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-text p {
+    text-align: left;
+    font-size: 16px;
+    line-height: 23px;
+    width: 90%;
+}
+
+.hero-action {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.hero-connect {
+    padding: 15px 20px;
+    border-radius: 50px;
+    background: linear-gradient(264deg, #000cff -5.09%, #36b6ff 106.28%);
+    cursor: pointer;
+}
+
+.hero-resume {
+    padding: 15px 40px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+.hero-connect:hover {
+    background: linear-gradient(267deg, #36b6ff 0.36%, #000cff 102.06%);
+}
+
+.hero-resume:hover {
+    background: #fff;
+    color: #000;
+    font-weight: 600;
+}
+
+.hero-image img {
+    max-width: 100%; /* Ensure image is responsive */
+    height: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .hero-text p {
+        width: 100%;
+    }
+
+    .hero-action {
+        justify-content: center;
+    }
+}

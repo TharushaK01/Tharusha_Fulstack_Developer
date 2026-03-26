@@ -1,0 +1,87 @@
+.glowing-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem;
+  min-height: 20vh;
+  perspective: 1000px;
+}
+
+.glowing-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.08); /* semi-transparent for glass effect */
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  width: 280px;
+  height: 250px;
+  color: #fff;
+  overflow: hidden;
+  backdrop-filter: blur(20px); /* frosted glass */
+  -webkit-backdrop-filter: blur(20px); /* Safari support */
+  transition: transform 0.2s ease, box-shadow 0.3s ease, border 0.3s ease;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.glowing-card:hover {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 30px var(--glow-color);
+}
+
+.glow-overlay {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  background: radial-gradient(
+    circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    var(--glow-color) 0%,
+    transparent 60%
+  );
+  opacity: 0.35;
+  filter: blur(55px);
+  z-index: 0;
+
+  /* Aura breathing effect */
+  animation: auraPulse 6s ease-in-out infinite alternate;
+  transition: opacity 0.4s ease, background 0.6s ease;
+}
+
+.glowing-card:hover .glow-overlay {
+  opacity: 0.9;
+  /* On hover → rainbow animated aura */
+  background: radial-gradient(
+    circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    hsl(0, 100%, 60%) 0%,
+    hsl(60, 100%, 60%) 20%,
+    hsl(120, 100%, 60%) 40%,
+    hsl(180, 100%, 60%) 60%,
+    hsl(240, 100%, 60%) 80%,
+    hsl(300, 100%, 60%) 100%
+  );
+  background-size: 200% 200%;
+  animation: auraPulse 6s ease-in-out infinite alternate,
+             rainbowShift 10s linear infinite;
+}
+
+.glowing-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Aura breathing */
+@keyframes auraPulse {
+  0% { transform: scale(1); opacity: 0.3; }
+  50% { transform: scale(1.2); opacity: 0.6; }
+  100% { transform: scale(1.1); opacity: 0.4; }
+}
+
+/* Rainbow shifting animation */
+@keyframes rainbowShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

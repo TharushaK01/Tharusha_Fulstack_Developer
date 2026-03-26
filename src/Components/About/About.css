@@ -1,0 +1,76 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.about-title {
+  max-width: 900px;
+  text-align: center;
+}
+
+.about-title h2 {
+  font-size: 32px;
+  margin-top: 20px;
+}
+
+.about-para {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 30px 0 50px;
+  text-align: left;
+  text-align: justify;  
+}
+
+/* ✅ Two-column layout */
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px; /* perfect space between columns */
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Left column → Skills */
+.about-skills {
+  flex: 1;
+  order: 1; /* Skills on LEFT */
+}
+
+.about-skills h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  background: linear-gradient(270deg, #000cff 80%, #36b6ff 106%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Right column → Experience */
+.about-work-experiences {
+  flex: 1;
+  order: 2; /* Experience on RIGHT */
+  margin: 0;
+}
+
+.about-work-experiences h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  background: linear-gradient(270deg, #000cff 60%, #36b6ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ✅ Responsive (stacked layout on small screens) */
+@media (max-width: 900px) {
+  .about-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
