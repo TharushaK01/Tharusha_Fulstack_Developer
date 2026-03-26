@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import "./Carousel.css";
-import Pramodya_Mobile from '../../Assets/Pramodya_Mobile.webp'
+import Pramodya_Mobile from '../../assets/Pramodya_Mobile.webp'
 import Amre from '../../assets/Amre.webp'
 import Cargo_Ton from '../../assets/Cargo_Ton.webp'
 import { ArrowBackIos, ArrowForwardIos } from "@mui/icons-material";
