@@ -14,7 +14,9 @@ const Navbar = () => {
   };
   return (
     <div className='navbar'>
+      <a href="/" className="nav-logo-link">
         <img className='nav-logo' src={logo} alt='nav-logo'/>
+        </a>
          {/* <!-- Hamburger Icon (hidden on desktop) --> */}
   <div class="nav-hamburger">
     <span></span>
