@@ -4,6 +4,22 @@ import "./Experience.css";
 
 const Experience = () => {
   const [items] = useState([
+        {
+      title: (
+        <>
+          WordPress & Shopify Specialist
+          <br /> (Hybrid)
+        </>
+      ),
+      subtitle: "Torch Labs Software, USA",
+      date: "11.2025–Present",
+      details: [
+        "Built responsive WordPress sites with custom HTML, CSS, JS, and PHP",
+        "Optimized SEO and Core Web Vitals for performance and visibility",
+        "Managed plugins, hosting, and version control in Agile workflow",
+      ],
+      skills: ["WordPress", "PHP", "CSS", "JavaScript", "Divi", "Elementor", "SEO" ],
+    },
     {
       title: (
         <>
@@ -35,21 +51,10 @@ const Experience = () => {
       ],
       skills: ["Adobe Photoshop", "Adobe Illustrator", "Adobe Premiere Pro", "Adobe After Effects"],
     },
-    {
-      title: "Computer Science Degree",
-      subtitle: "Sabaragamuwa University of Sri Lanka",
-      date: "2020–2025",
-      details: [
-        "Bachelor of Science (Hons)",
-        "Graduated with great honor, earning a 3.2 GPA.",
-        "Focus in Full-Stack Development",
-      ],
-      skills: ["React.JS", "Angular", "Node.Js", "Spring Boot", "Java", "Python", "C++" ],
-    },
   ]);
 
   const [collapsedStates, setCollapsedStates] = useState(
-    Array(items.length).fill(true) // Start collapsed
+    Array(items.length).fill(true) 
   );
 
   const handleToggle = (index) => {

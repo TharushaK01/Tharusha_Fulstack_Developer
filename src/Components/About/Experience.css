@@ -5,7 +5,6 @@
   padding: 20px 0;
 }
 
-
 .timeline::before {
   content: '';
   position: absolute;
@@ -28,13 +27,14 @@
 .timeline-item {
   background: linear-gradient(135deg, #1e293b, #0f172a);
   color: #e2e8f0;
-  padding: 20px;
+  padding: 30px 20px;
   margin: 30px 0;
   border-radius: 12px;
   position: relative;
   box-shadow: 0 4px 15px rgba(0,0,0,0.4);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-   height: auto;
+  height: auto;
+  overflow: hidden;
 }
 
 .timeline-item:hover {
@@ -44,9 +44,9 @@
 
 
 .timeline-item.collapsed {
-  height: 60px;
+  height: 78px;
   overflow: hidden;
-   transition: height 0.3s ease;
+  transition: height 0.3s ease;
 }
 
 

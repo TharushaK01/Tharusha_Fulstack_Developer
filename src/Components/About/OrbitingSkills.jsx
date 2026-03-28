@@ -8,6 +8,7 @@ import Laravel from '../../assets/skills/laravel-svgrepo-com.svg';
 import Wordpress from '../../assets/skills/wordpress-color-svgrepo-com.svg';
 import Webflow from '../../assets/skills/webflow-svgrepo-com.svg';
 import Figma from '../../assets/skills/figma-svgrepo-com.svg';
+import Shopify from '../../assets/skills/shopify.svg';
 
 const skills = [
   { name: 'React', icon: Reactjs },
@@ -18,14 +19,12 @@ const skills = [
   { name: 'WordPress', icon: Wordpress },
   { name: 'Webflow', icon: Webflow },
   { name: 'Figma', icon: Figma },
+  { name: 'Shopify', icon: Shopify },
 ];
 
 const SkillsCircle = () => {
   return (
     <div className="skills-container">
-      {/* <div className="center-icon">
-        <span className="code-icon">{'< >'}</span>
-      </div> */}
       <div className="skills-wheel">
         {skills.map((skill, index) => {
           const angle = (360 / skills.length) * index;
