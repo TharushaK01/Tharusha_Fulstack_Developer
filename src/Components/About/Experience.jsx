@@ -14,11 +14,12 @@ const Experience = () => {
       subtitle: "Torch Labs Software, USA",
       date: "11.2025–Present",
       details: [
-        "Built responsive WordPress sites with custom HTML, CSS, JS, and PHP",
-        "Optimized SEO and Core Web Vitals for performance and visibility",
-        "Managed plugins, hosting, and version control in Agile workflow",
+        "Developed high-converting WordPress & Shopify solutions using custom PHP, Liquid, and JS to enhance user engagement.",
+        "Architected stable server environments with real-time Grafana monitoring and proactive maintenance for maximum uptime.",
+        "Optimized Core Web Vitals and SEO through technical performance tuning and schema implementation for global brands.",
+        "Managed end-to-end site reliability, including secure hosting, version control, and regular security audits.",
       ],
-      skills: ["WordPress", "PHP", "CSS", "JavaScript", "Divi", "Elementor", "SEO" ],
+      skills: ["WordPress", "PHP", "CSS", "JavaScript", "Divi", "Elementor", "SEO", "Shopify", "Liquid", "Grafana", "Server Management"],
     },
     {
       title: (
