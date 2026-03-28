@@ -11,7 +11,7 @@ import { CountUp } from "../../Components/lightswind/count-up";
 
 const Services = () => {
   return (
-    <div className="services">
+    <div id="services" className="services">
       <h2>My Services</h2>
 
       <div className="services-row">

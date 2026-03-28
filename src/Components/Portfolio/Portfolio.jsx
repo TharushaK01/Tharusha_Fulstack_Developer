@@ -13,7 +13,7 @@ import Carousel from './Carousel'
 const Portfolio = () => {
 
   return (
-    <div className='portfolio'>
+    <div id='portfolio' className='portfolio'>
       <h2>Portfolio</h2>
 
       <div className="type-folio">

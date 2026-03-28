@@ -16,6 +16,17 @@
   font-weight: 600;
   cursor: pointer;
 }
+
+.nav-link {
+  color: white;
+  text-decoration: none;          
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #36b6ff;               
+
+}
 .nav-hamburger{
   display: none;
   flex-direction: column;
@@ -48,6 +59,8 @@
   cursor: pointer;
   font-weight: 600;
   transition: 0.5s;
+  color: white;
+  text-decoration: none;
 }
 .nav-connect:hover {
   background: linear-gradient(267deg, #36b6ff 0.36%, #000cff 102.06%);
