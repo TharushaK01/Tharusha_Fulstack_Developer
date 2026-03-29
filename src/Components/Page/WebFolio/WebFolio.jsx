@@ -16,7 +16,8 @@ import Employee from "../../../assets/emp_mangmnt.webp";
 import Player from "../../../assets/music_player.webp";
 import Todo from "../../../assets/todo_list.webp";
 import Item from "../../../assets/itm_mngmnt.webp";
-import Age from "../../../assets/agecalculator.webp"
+import Age from "../../../assets/agecalculator.webp";
+import Tikiricom from "../../../assets/tikiritoys.webp";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const projects = [
@@ -94,6 +95,17 @@ const wordpressProjects = [
   },
 ];
 
+
+const shopifyProjects = [
+  {
+    img: Tikiricom,
+    title: "Tikiri Toys",
+    tech: ["Shopify", "Liquid", "prestige", "JavaScript", "PHP", "MySQL"],
+    live: "https://tikiritoys.com/",
+  },
+
+];
+
 const WebflowProjects = [
   {
     img: Amre,
@@ -132,7 +144,7 @@ const fullstackProjects = [
     github: "https://github.com/TharushaK01/AngularToDoApp_Firebase",
     // live: "#",
   },
-    {
+  {
     img: Age,
     title: "Age Calculator React App",
     tech: ["React", "CSS", "JavaScript (ES6+)"],
@@ -212,6 +224,41 @@ const WebFolio = () => {
           <div className="wrapper">
             <div className="box-area">
               {wordpressProjects.map((project, index) => (
+                <div className="box" key={index}>
+                  <img src={project.img} alt={project.title} />
+                  <div className="overlay">
+                    <h3>{project.title}</h3>
+                    <ul>
+                      {project.tech.map((tech, i) => (
+                        <li key={i}>{tech}</li>
+                      ))}
+                    </ul>
+                    <div className="icon">
+                      {project.github && (
+                        <a
+                          href={project.github}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <FaGithub className="webdev-icon" />
+                        </a>
+                      )}
+                      <a href={project.live} target="_blank" rel="noreferrer">
+                        <FaExternalLinkAlt className="webdev-icon" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <h2>Shopify Webfloio</h2>
+        <div className="card-area">
+          <div className="wrapper">
+            <div className="box-area">
+              {shopifyProjects.map((project, index) => (
                 <div className="box" key={index}>
                   <img src={project.img} alt={project.title} />
                   <div className="overlay">
