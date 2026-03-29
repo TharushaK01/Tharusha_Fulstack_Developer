@@ -75,3 +75,86 @@
   white-space: nowrap;
   /* margin-bottom: 50px; */
 }
+@media (max-width: 1024px) {
+  .services h2 {
+    font-size: 38px;
+  }
+  
+  .services-row {
+    gap: 30px;
+  }
+  
+  .service-card {
+    padding: 25px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services {
+    padding: 0 5%;
+    margin-bottom: 80px;
+  }
+
+  .services h2 {
+    font-size: 34px;
+    margin: 60px 0 50px 0;
+  }
+
+  .services-row {
+    flex-direction: column;
+    gap: 30px;
+    margin: 40px 0;
+  }
+
+  .service-card {
+    width: 100%;
+    padding: 32px 25px;
+  }
+
+  .service-card p {
+    font-size: 15.5px;
+    line-height: 1.65;
+  }
+
+  /* Stats - Stack vertically on mobile */
+  .stats-container {
+    flex-direction: column;
+    gap: 40px;
+    margin: 60px 0;
+  }
+
+  .stat-item {
+    padding: 0;
+  }
+
+  .stat-divider {
+    display: none; /* Hide vertical divider on mobile */
+  }
+
+  .stat-item .count-up {
+    font-size: 42px;
+  }
+
+  .stat-item p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services h2 {
+    font-size: 30px;
+    margin: 50px 0 40px 0;
+  }
+
+  .service-card {
+    padding: 28px 20px;
+  }
+
+  .services-row h3 {
+    font-size: 23px;
+  }
+
+  .stat-item .count-up {
+    font-size: 38px;
+  }
+}

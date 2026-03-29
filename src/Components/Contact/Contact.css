@@ -97,3 +97,98 @@
 .contact-submit:hover{
     background: linear-gradient(267deg, #36b6ff 0.36%, #000cff 102.06%);
 }
+@media (max-width: 1024px) {
+  .contact-section {
+    gap: 60px;
+  }
+  
+  .contact-left h3 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    gap: 60px;
+    margin: 40px 0 80px 0;
+  }
+
+  .contact-title h2 {
+    font-size: 36px;
+  }
+
+  .contact-section {
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+  }
+
+  .contact-left {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .contact-left h3,
+  .contact-left p {
+    text-align: center;
+  }
+
+  .contact-left p {
+    max-width: 100%;
+  }
+
+  .contact-details {
+    align-items: center;
+  }
+
+  .contact-right {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .contatct-form input,
+  .contatct-form textarea {
+    width: 100%;
+  }
+
+  .contact-submit {
+    align-self: center;
+    padding: 16px 50px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    padding: 0 5%;
+  }
+
+  .contact-title h2 {
+    font-size: 32px;
+  }
+
+  .contact-left h3 {
+    font-size: 24px;
+  }
+
+  .contact-section {
+    gap: 50px;
+  }
+
+  .contatct-form input {
+    height: 52px;
+    font-size: 15.5px;
+  }
+
+  .contatct-form textarea {
+    min-height: 140px;
+    font-size: 15.5px;
+  }
+
+  .contact-submit {
+    padding: 15px 40px;
+    font-size: 16.5px;
+  }
+}
