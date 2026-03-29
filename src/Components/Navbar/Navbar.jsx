@@ -25,12 +25,21 @@ const Navbar = () => {
         <span></span>
       </div>
       <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
-        <li onClick={() => {
+        {/* <li onClick={() => {
           closeMenu();
           window.location.href = '/';
           className="nav-link"
         }}>
           Home
+        </li> */}
+        <li>
+          <a
+            href="/"
+            onClick={closeMenu}
+            className="nav-link"
+          >
+            Home
+          </a>
         </li>
 
         <li>

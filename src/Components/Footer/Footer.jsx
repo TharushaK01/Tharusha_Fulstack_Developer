@@ -8,17 +8,19 @@ const Footer = () => {
 
       <div className="footer-items">
         <div className="footer-left">
+           <a href="/">
           <img src={logo} />
+          </a>
           <h2>Tharusha Kavinda</h2>
           <p>Full-Stack Developer</p>
         </div>
 
         <div className="footer-right">
           <ul className="nav-menu">
-            <li>Home</li>
-            <li>About Me</li>
-            <li>Services</li>
-            <li>Portfolio</li>
+            <li><a href="/" className="nav-link">Home</a></li>
+            <li><a href="#about-me" className="nav-link">About Me</a></li>
+            <li><a href="#services" className="nav-link">Services</a></li>
+            <li><a href="#portfolio" className="nav-link">Portfolio</a></li>
           </ul>
         </div>
       </div>

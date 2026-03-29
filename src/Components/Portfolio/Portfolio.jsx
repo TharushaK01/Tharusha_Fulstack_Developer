@@ -21,6 +21,7 @@ const Portfolio = () => {
         <div className="foliorow">
           <h3>Web Folio</h3>
          <Carousel/>
+          <div className="see_more"><Link to="/web-folio">See More &rarr;</Link></div>
         </div>
 
         <div className="foliorow">
